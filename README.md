@@ -1,2 +1,2 @@
 # STT
-Creando un stt desde cero
+Creando un stt desde cero en matlab
