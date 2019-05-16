@@ -8,7 +8,6 @@ function [t,y] = Extraer_senal(fileName)
 info = audioinfo(fileName);
 [y,Fs] = audioread(fileName);
 
-sound(y,Fs)
 t = 0:seconds(1/Fs):seconds(info.Duration); 
 t = t(1:end-1);
 end

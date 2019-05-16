@@ -11,6 +11,7 @@ captura_audio(FS,nBits,NumChannels,OutFileName,TimeCapture)
 
 %%%%%%%%%%%%%%%%
 % plot signal 
+sound(y,FS);
 plot(t,y)
 title('señal')
 xlabel('tiempo [Seg]')
