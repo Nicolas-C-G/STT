@@ -9,11 +9,6 @@ captura_audio(FS,nBits,NumChannels,OutFileName,TimeCapture)
 
 [t,y] = Extraer_senal('test.wav');
 
-%%%%%%%%%%%%%%%%
-% plot signal 
-sound(y,FS);
-plot(t,y)
-title('señal')
-xlabel('tiempo [Seg]')
-ylabel('amplitud')
-%%%%%%%%%%%%%%%%%%
+output = Filtro_amplitud(y,0.003);
+plot(output)
+sound(output,FS);
